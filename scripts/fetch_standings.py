@@ -7,7 +7,7 @@ API_URL = "https://worldcup26.ir/get/games"
 
 DRAFTERS = {
     "Dogg": ["France", "Morocco", "USA", "Colombia", "Ecuador"],
-    "Beet": ["Spain", "Croatia", "Belgium", "Uruguay", "Ivory Coast"],
+    "Reet": ["Spain", "Croatia", "Belgium", "Uruguay", "Ivory Coast"],
     "Joven": ["Argentina", "Netherlands", "Japan", "Turkey", "Austria"],
     "Kid":  ["England", "Brazil", "Mexico", "Senegal", "Korea"],
     "Dike": ["Portugal", "Germany", "Norway", "Switzerland", "Sweden"],
