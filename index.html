@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Cup 2026 Draft Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="trophy">⚽</div>
+      <h1>World Cup 2026 Draft</h1>
+      <p id="last-updated">Loading standings...</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="leaderboard">
+      <h2>Leaderboard</h2>
+      <div class="table-wrap">
+        <table id="standings-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th class="left">Drafter</th>
+              <th title="Total Points">Pts</th>
+              <th title="Wins">W</th>
+              <th title="Overtime Wins">OTW</th>
+              <th title="Ties">T</th>
+              <th title="Overtime Losses">OTL</th>
+              <th title="Losses">L</th>
+            </tr>
+          </thead>
+          <tbody id="standings-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="team-details">
+      <h2>Team Breakdown</h2>
+      <div id="drafter-cards"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Scoring: Win = 3 pts &nbsp;·&nbsp; OTW = 2 pts &nbsp;·&nbsp; Tie = 1 pt &nbsp;·&nbsp; OTL = 1 pt &nbsp;·&nbsp; Loss = 0 pts</p>
+    <p class="footer-sub">Updated nightly via <a href="https://www.football-data.org" target="_blank">football-data.org</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
