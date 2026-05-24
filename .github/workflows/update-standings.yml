@@ -23,8 +23,6 @@ jobs:
         run: pip install requests
 
       - name: Fetch standings
-        env:
-          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
         run: python scripts/fetch_standings.py
 
       - name: Commit updated standings

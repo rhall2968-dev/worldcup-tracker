@@ -1,11 +1,9 @@
-import os
 import json
 import requests
 from datetime import datetime, timezone
+import os
 
-API_KEY = os.environ.get("FOOTBALL_DATA_API_KEY", "")
-BASE_URL = "https://api.football-data.org/v4"
-COMPETITION = "WC"  # football-data.org competition code for FIFA World Cup
+API_URL = "https://worldcup26.ir/get/games"
 
 DRAFTERS = {
     "Dogg": ["France", "Morocco", "USA", "Colombia", "Ecuador"],
@@ -15,13 +13,10 @@ DRAFTERS = {
     "Dike": ["Portugal", "Germany", "Norway", "Switzerland", "Sweden"],
 }
 
-# football-data.org team names → our draft names
+# worldcup26.ir name → our draft name
 API_NAME_MAP = {
-    "Korea Republic":    "Korea",
-    "Republic of Korea": "Korea",
-    "Côte d'Ivoire":     "Ivory Coast",
-    "United States":     "USA",
-    "Türkiye":           "Turkey",
+    "South Korea":   "Korea",
+    "United States": "USA",
 }
 
 POINTS = {"WIN": 3, "OTW": 2, "TIE": 1, "OTL": 1, "LOSS": 0}
@@ -32,26 +27,29 @@ def normalize(name):
 
 
 def is_overtime(match):
-    et  = match["score"].get("extraTime") or {}
-    pen = match["score"].get("penalties") or {}
-    return et.get("home") is not None or pen.get("home") is not None
+    elapsed = (match.get("time_elapsed") or "").upper()
+    return "AET" in elapsed or "PEN" in elapsed
 
 
 def result_for(match, team):
-    home   = normalize(match["homeTeam"]["name"])
-    away   = normalize(match["awayTeam"]["name"])
-    winner = match["score"]["winner"]  # HOME_TEAM | AWAY_TEAM | DRAW
-
-    if winner == "DRAW":
-        return "TIE"
+    home  = normalize(match["home_team_name_en"])
+    away  = normalize(match["away_team_name_en"])
+    h_score = int(match.get("home_score") or 0)
+    a_score = int(match.get("away_score") or 0)
 
     is_home = team == home
-    won = (winner == "HOME_TEAM" and is_home) or (winner == "AWAY_TEAM" and not is_home)
+    ot      = is_overtime(match)
+
+    if h_score == a_score:
+        # Draws only happen in group stage
+        return "TIE"
+
+    won = (h_score > a_score and is_home) or (a_score > h_score and not is_home)
 
     if won:
-        return "OTW" if is_overtime(match) else "WIN"
+        return "OTW" if ot else "WIN"
     else:
-        return "OTL" if is_overtime(match) else "LOSS"
+        return "OTL" if ot else "LOSS"
 
 
 def empty_record():
@@ -60,47 +58,39 @@ def empty_record():
 
 def main():
     team_drafter = {team: d for d, teams in DRAFTERS.items() for team in teams}
-    records = {d: {t: empty_record() for t in teams} for d, teams in DRAFTERS.items()}
+    records      = {d: {t: empty_record() for t in teams} for d, teams in DRAFTERS.items()}
 
-    if not API_KEY:
-        print("Warning: FOOTBALL_DATA_API_KEY not set — writing zero standings.")
-    else:
-        try:
-            headers = {"X-Auth-Token": API_KEY}
-            resp = requests.get(
-                f"{BASE_URL}/competitions/{COMPETITION}/matches",
-                headers=headers,
-                timeout=30,
-            )
-            resp.raise_for_status()
-            matches = resp.json().get("matches", [])
-            print(f"Fetched {len(matches)} matches.")
+    try:
+        resp = requests.get(API_URL, timeout=30)
+        resp.raise_for_status()
+        matches = resp.json()
+        print(f"Fetched {len(matches)} matches.")
 
-            for match in matches:
-                if match.get("status") != "FINISHED":
+        for match in matches:
+            if str(match.get("finished", "")).upper() != "TRUE":
+                continue
+
+            home = normalize(match["home_team_name_en"])
+            away = normalize(match["away_team_name_en"])
+
+            for team in (home, away):
+                if team not in team_drafter:
                     continue
+                drafter = team_drafter[team]
+                result  = result_for(match, team)
+                rec     = records[drafter][team]
 
-                home = normalize(match["homeTeam"]["name"])
-                away = normalize(match["awayTeam"]["name"])
+                if result == "WIN":    rec["W"]   += 1
+                elif result == "LOSS": rec["L"]   += 1
+                elif result == "TIE":  rec["T"]   += 1
+                elif result == "OTW":  rec["OTW"] += 1
+                elif result == "OTL":  rec["OTL"] += 1
 
-                for team in (home, away):
-                    if team not in team_drafter:
-                        continue
-                    drafter = team_drafter[team]
-                    result  = result_for(match, team)
-                    rec     = records[drafter][team]
+                rec["pts"] += POINTS[result]
 
-                    if result == "WIN":    rec["W"]   += 1
-                    elif result == "LOSS": rec["L"]   += 1
-                    elif result == "TIE":  rec["T"]   += 1
-                    elif result == "OTW":  rec["OTW"] += 1
-                    elif result == "OTL":  rec["OTL"] += 1
-
-                    rec["pts"] += POINTS[result]
-
-        except Exception as e:
-            print(f"Error fetching from API: {e}")
-            print("Writing standings with current data (zeros if first run).")
+    except Exception as e:
+        print(f"Error fetching from API: {e}")
+        print("Writing standings with current data (zeros if first run).")
 
     output = {
         "last_updated": datetime.now(timezone.utc).isoformat(),
