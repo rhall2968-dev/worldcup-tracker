@@ -19,9 +19,6 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install dependencies
-        run: pip install requests
-
       - name: Fetch standings
         run: python scripts/fetch_standings.py
 
