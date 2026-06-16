@@ -1,9 +1,16 @@
 import json
-import requests
+import urllib.request
+import urllib.error
+import ssl
 from datetime import datetime, timezone
 import os
 
 API_URL = "https://worldcup26.ir/get/games"
+
+# Disable SSL verification for the Iranian API
+ssl_context = ssl.create_default_context()
+ssl_context.check_hostname = False
+ssl_context.verify_mode = ssl.CERT_NONE
 
 DRAFTERS = {
     "Dogg": ["France", "Morocco", "USA", "Colombia", "Ecuador"],
@@ -61,9 +68,13 @@ def main():
     records      = {d: {t: empty_record() for t in teams} for d, teams in DRAFTERS.items()}
 
     try:
-        resp = requests.get(API_URL, timeout=30)
-        resp.raise_for_status()
-        matches = resp.json()
+        req = urllib.request.Request(API_URL)
+        with urllib.request.urlopen(req, context=ssl_context, timeout=30) as response:
+            data = response.read()
+            response_text = data.decode('utf-8')
+            # Handle both dict and list responses
+            response_data = json.loads(response_text)
+            matches = response_data.get('games', []) if isinstance(response_data, dict) else response_data
         print(f"Fetched {len(matches)} matches.")
 
         for match in matches:
