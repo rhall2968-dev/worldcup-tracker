@@ -40,6 +40,8 @@ function renderLeaderboard(sorted) {
   const tbody = document.getElementById('standings-body');
   sorted.forEach(([name, drafter], i) => {
     const totals = sumTeams(drafter.teams);
+    const possiblePts = calcPossiblePoints(totals);
+    const record = `${totals.W}-${totals.L}-${totals.T}`;
     const rank = i + 1;
     const medal = RANKS[i] ?? rank;
     const tr = document.createElement('tr');
@@ -48,11 +50,8 @@ function renderLeaderboard(sorted) {
       <td>${medal}</td>
       <td class="drafter-name">${name}</td>
       <td class="total-pts">${drafter.total_points}</td>
-      <td>${totals.W}</td>
-      <td>${totals.OTW}</td>
-      <td>${totals.T}</td>
-      <td>${totals.OTL}</td>
-      <td>${totals.L}</td>
+      <td>${record}</td>
+      <td>${possiblePts}</td>
     `;
     tbody.appendChild(tr);
   });
@@ -109,6 +108,11 @@ function sumTeams(teams) {
     (acc, t) => ({ W: acc.W + t.W, OTW: acc.OTW + t.OTW, T: acc.T + t.T, OTL: acc.OTL + t.OTL, L: acc.L + t.L }),
     { W: 0, OTW: 0, T: 0, OTL: 0, L: 0 }
   );
+}
+
+function calcPossiblePoints(totals) {
+  const gamesPlayed = totals.W + totals.OTW + totals.T + totals.OTL + totals.L;
+  return gamesPlayed * 3;
 }
 
 loadStandings().catch(err => {
