@@ -1,7 +1,7 @@
 :root {
-  --green-dark: #1a5c38;
-  --green-mid: #27864f;
-  --green-light: #e8f5ee;
+  --green-dark: #1e3a8a;
+  --green-mid: #2563eb;
+  --green-light: #eff6ff;
   --text: #1a1a1a;
   --muted: #666;
   --border: #e0e0e0;
@@ -18,7 +18,7 @@ body {
 
 /* Header */
 header {
-  background: linear-gradient(135deg, #0d3d23 0%, var(--green-dark) 50%, var(--green-mid) 100%);
+  background: linear-gradient(135deg, #0f172a 0%, var(--green-dark) 50%, var(--green-mid) 100%);
   color: white;
   padding: 2.5rem 1rem 2rem;
   text-align: center;
