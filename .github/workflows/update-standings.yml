@@ -2,7 +2,7 @@ name: Update World Cup Standings
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # Every 3 hours (00:00, 03:00, 06:00, etc. UTC)
+    - cron: '0 * * * *'  # Every hour (UTC)
   workflow_dispatch:       # lets you trigger manually from the GitHub Actions tab
 
 permissions:
