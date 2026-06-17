@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T14:49:41.299519+00:00",
+  "last_updated": "2026-06-17T22:16:46.367818+00:00",
   "drafters": {
     "Dogg": {
       "total_points": 7,
@@ -59,7 +59,7 @@
         },
         "Croatia": {
           "W": 0,
-          "L": 0,
+          "L": 1,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
@@ -137,15 +137,15 @@
       }
     },
     "Kid": {
-      "total_points": 7,
+      "total_points": 10,
       "teams": {
         "England": {
-          "W": 0,
+          "W": 1,
           "L": 0,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 0
+          "pts": 3
         },
         "Brazil": {
           "W": 0,
@@ -182,15 +182,15 @@
       }
     },
     "Dike": {
-      "total_points": 10,
+      "total_points": 11,
       "teams": {
         "Portugal": {
           "W": 0,
           "L": 0,
-          "T": 0,
+          "T": 1,
           "OTW": 0,
           "OTL": 0,
-          "pts": 0
+          "pts": 1
         },
         "Germany": {
           "W": 1,
