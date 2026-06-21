@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T21:00:46.798842+00:00",
+  "last_updated": "2026-06-21T22:56:29.161315+00:00",
   "drafters": {
     "Dogg": {
       "total_points": 17,
@@ -47,7 +47,7 @@
       }
     },
     "Reet": {
-      "total_points": 9,
+      "total_points": 10,
       "teams": {
         "Spain": {
           "W": 1,
@@ -68,10 +68,10 @@
         "Belgium": {
           "W": 0,
           "L": 0,
-          "T": 1,
+          "T": 2,
           "OTW": 0,
           "OTL": 0,
-          "pts": 1
+          "pts": 2
         },
         "Uruguay": {
           "W": 0,
