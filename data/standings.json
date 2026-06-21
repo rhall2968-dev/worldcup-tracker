@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-20T20:58:54.419485+00:00",
+  "last_updated": "2026-06-21T10:47:00.931792+00:00",
   "drafters": {
     "Dogg": {
-      "total_points": 16,
+      "total_points": 17,
       "teams": {
         "France": {
           "W": 1,
@@ -39,10 +39,10 @@
         "Ecuador": {
           "W": 0,
           "L": 1,
-          "T": 0,
+          "T": 1,
           "OTW": 0,
           "OTL": 0,
-          "pts": 0
+          "pts": 1
         }
       }
     },
@@ -83,7 +83,7 @@
         },
         "Ivory Coast": {
           "W": 1,
-          "L": 0,
+          "L": 1,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
@@ -92,7 +92,7 @@
       }
     },
     "Joven": {
-      "total_points": 11,
+      "total_points": 14,
       "teams": {
         "Argentina": {
           "W": 1,
@@ -111,12 +111,12 @@
           "pts": 4
         },
         "Japan": {
-          "W": 0,
+          "W": 1,
           "L": 0,
           "T": 1,
           "OTW": 0,
           "OTL": 0,
-          "pts": 1
+          "pts": 4
         },
         "Turkey": {
           "W": 0,
@@ -182,7 +182,7 @@
       }
     },
     "Dike": {
-      "total_points": 14,
+      "total_points": 17,
       "teams": {
         "Portugal": {
           "W": 0,
@@ -193,12 +193,12 @@
           "pts": 1
         },
         "Germany": {
-          "W": 1,
+          "W": 2,
           "L": 0,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 3
+          "pts": 6
         },
         "Norway": {
           "W": 1,
