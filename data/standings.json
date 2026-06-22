@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T00:03:43.451161+00:00",
+  "last_updated": "2026-06-22T06:15:53.019236+00:00",
   "drafters": {
     "Dogg": {
       "total_points": 17,
@@ -47,7 +47,7 @@
       }
     },
     "Reet": {
-      "total_points": 10,
+      "total_points": 11,
       "teams": {
         "Spain": {
           "W": 1,
@@ -76,10 +76,10 @@
         "Uruguay": {
           "W": 0,
           "L": 0,
-          "T": 1,
+          "T": 2,
           "OTW": 0,
           "OTL": 0,
-          "pts": 1
+          "pts": 2
         },
         "Ivory Coast": {
           "W": 1,
