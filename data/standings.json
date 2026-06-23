@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-06-22T23:57:24.941509+00:00",
+  "last_updated": "2026-06-23T02:36:46.217709+00:00",
   "drafters": {
     "Dogg": {
-      "total_points": 17,
+      "total_points": 20,
       "teams": {
         "France": {
-          "W": 1,
+          "W": 2,
           "L": 0,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 3
+          "pts": 6
         },
         "Morocco": {
           "W": 1,
@@ -165,7 +165,7 @@
         },
         "Senegal": {
           "W": 0,
-          "L": 1,
+          "L": 2,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
@@ -182,7 +182,7 @@
       }
     },
     "Dike": {
-      "total_points": 17,
+      "total_points": 20,
       "teams": {
         "Portugal": {
           "W": 0,
@@ -201,12 +201,12 @@
           "pts": 6
         },
         "Norway": {
-          "W": 1,
+          "W": 2,
           "L": 0,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 3
+          "pts": 6
         },
         "Switzerland": {
           "W": 1,
