@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-25T20:54:15.342490+00:00",
+  "last_updated": "2026-06-25T22:13:18.913470+00:00",
   "drafters": {
     "Dogg": {
-      "total_points": 26,
+      "total_points": 29,
       "teams": {
         "France": {
           "W": 2,
@@ -37,17 +37,17 @@
           "pts": 6
         },
         "Ecuador": {
-          "W": 0,
+          "W": 1,
           "L": 1,
           "T": 1,
           "OTW": 0,
           "OTL": 0,
-          "pts": 1
+          "pts": 4
         }
       }
     },
     "Reet": {
-      "total_points": 14,
+      "total_points": 17,
       "teams": {
         "Spain": {
           "W": 1,
@@ -82,12 +82,12 @@
           "pts": 2
         },
         "Ivory Coast": {
-          "W": 1,
+          "W": 2,
           "L": 1,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 3
+          "pts": 6
         }
       }
     },
@@ -194,7 +194,7 @@
         },
         "Germany": {
           "W": 2,
-          "L": 0,
+          "L": 1,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
