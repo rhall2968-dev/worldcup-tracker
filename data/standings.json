@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-06-26T20:24:22.075736+00:00",
+  "last_updated": "2026-06-26T21:58:37.912741+00:00",
   "drafters": {
     "Dogg": {
-      "total_points": 29,
+      "total_points": 32,
       "teams": {
         "France": {
-          "W": 2,
+          "W": 3,
           "L": 0,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 6
+          "pts": 9
         },
         "Morocco": {
           "W": 2,
@@ -137,7 +137,7 @@
       }
     },
     "Kid": {
-      "total_points": 23,
+      "total_points": 26,
       "teams": {
         "England": {
           "W": 1,
@@ -164,12 +164,12 @@
           "pts": 9
         },
         "Senegal": {
-          "W": 0,
+          "W": 1,
           "L": 2,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 0
+          "pts": 3
         },
         "Korea": {
           "W": 1,
@@ -202,7 +202,7 @@
         },
         "Norway": {
           "W": 2,
-          "L": 0,
+          "L": 1,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
