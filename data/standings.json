@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T22:01:33.849789+00:00",
+  "last_updated": "2026-06-29T23:48:52.892107+00:00",
   "drafters": {
     "Dogg": {
       "total_points": 33,
@@ -182,7 +182,7 @@
       }
     },
     "Dike": {
-      "total_points": 28,
+      "total_points": 29,
       "teams": {
         "Portugal": {
           "W": 1,
@@ -195,10 +195,10 @@
         "Germany": {
           "W": 2,
           "L": 1,
-          "T": 0,
+          "T": 1,
           "OTW": 0,
           "OTL": 0,
-          "pts": 6
+          "pts": 7
         },
         "Norway": {
           "W": 2,
