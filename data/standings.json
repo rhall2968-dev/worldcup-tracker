@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T18:55:13.405666+00:00",
+  "last_updated": "2026-06-29T20:45:27.470523+00:00",
   "drafters": {
     "Dogg": {
       "total_points": 33,
@@ -112,7 +112,7 @@
         },
         "Japan": {
           "W": 1,
-          "L": 0,
+          "L": 1,
           "T": 2,
           "OTW": 0,
           "OTL": 0,
@@ -137,7 +137,7 @@
       }
     },
     "Kid": {
-      "total_points": 29,
+      "total_points": 32,
       "teams": {
         "England": {
           "W": 2,
@@ -148,12 +148,12 @@
           "pts": 7
         },
         "Brazil": {
-          "W": 2,
+          "W": 3,
           "L": 0,
           "T": 1,
           "OTW": 0,
           "OTL": 0,
-          "pts": 7
+          "pts": 10
         },
         "Mexico": {
           "W": 3,
