@@ -34,6 +34,12 @@ def normalize(name):
 
 
 def is_overtime(match):
+    # Check for penalty shootout indicators
+    home_pen = match.get("home_penalty_score")
+    away_pen = match.get("away_penalty_score")
+    if home_pen is not None and away_pen is not None:
+        return True
+    # Check for AET (After Extra Time) in time_elapsed
     elapsed = (match.get("time_elapsed") or "").upper()
     return "AET" in elapsed or "PEN" in elapsed
 
@@ -47,11 +53,19 @@ def result_for(match, team):
     is_home = team == home
     ot      = is_overtime(match)
 
-    if h_score == a_score:
-        # Draws only happen in group stage
-        return "TIE"
-
-    won = (h_score > a_score and is_home) or (a_score > h_score and not is_home)
+    # If there are penalty scores, use those to determine the winner
+    home_pen = match.get("home_penalty_score")
+    away_pen = match.get("away_penalty_score")
+    if home_pen is not None and away_pen is not None:
+        h_pen = int(home_pen)
+        a_pen = int(away_pen)
+        won = (h_pen > a_pen and is_home) or (a_pen > h_pen and not is_home)
+    else:
+        # Regular match outcome
+        if h_score == a_score:
+            # Draws only happen in group stage
+            return "TIE"
+        won = (h_score > a_score and is_home) or (a_score > h_score and not is_home)
 
     if won:
         return "OTW" if ot else "WIN"
