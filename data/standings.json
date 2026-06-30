@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-30T01:56:38.317141+00:00",
+  "last_updated": "2026-06-30T04:13:12.938124+00:00",
   "drafters": {
     "Dogg": {
-      "total_points": 33,
+      "total_points": 35,
       "teams": {
         "France": {
           "W": 3,
@@ -16,9 +16,9 @@
           "W": 2,
           "L": 0,
           "T": 1,
-          "OTW": 0,
+          "OTW": 1,
           "OTL": 0,
-          "pts": 7
+          "pts": 9
         },
         "USA": {
           "W": 2,
@@ -92,7 +92,7 @@
       }
     },
     "Joven": {
-      "total_points": 28,
+      "total_points": 29,
       "teams": {
         "Argentina": {
           "W": 3,
@@ -107,8 +107,8 @@
           "L": 0,
           "T": 1,
           "OTW": 0,
-          "OTL": 0,
-          "pts": 7
+          "OTL": 1,
+          "pts": 8
         },
         "Japan": {
           "W": 1,
@@ -195,9 +195,9 @@
         "Germany": {
           "W": 2,
           "L": 1,
-          "T": 1,
+          "T": 0,
           "OTW": 0,
-          "OTL": 0,
+          "OTL": 1,
           "pts": 7
         },
         "Norway": {
