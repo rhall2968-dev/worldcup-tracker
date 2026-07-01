@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01T22:10:03.125522+00:00",
+  "last_updated": "2026-07-01T23:59:20.189179+00:00",
   "drafters": {
     "Dogg": {
       "total_points": 38,
@@ -47,7 +47,7 @@
       }
     },
     "Reet": {
-      "total_points": 27,
+      "total_points": 29,
       "teams": {
         "Spain": {
           "W": 2,
@@ -69,9 +69,9 @@
           "W": 1,
           "L": 0,
           "T": 2,
-          "OTW": 0,
+          "OTW": 1,
           "OTL": 0,
-          "pts": 5
+          "pts": 7
         },
         "Uruguay": {
           "W": 0,
@@ -137,7 +137,7 @@
       }
     },
     "Kid": {
-      "total_points": 36,
+      "total_points": 37,
       "teams": {
         "England": {
           "W": 2,
@@ -168,8 +168,8 @@
           "L": 2,
           "T": 0,
           "OTW": 0,
-          "OTL": 0,
-          "pts": 3
+          "OTL": 1,
+          "pts": 4
         },
         "Korea": {
           "W": 1,
