@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02T20:48:30.097320+00:00",
+  "last_updated": "2026-07-02T21:55:23.962514+00:00",
   "drafters": {
     "Dogg": {
       "total_points": 41,
@@ -47,15 +47,15 @@
       }
     },
     "Reet": {
-      "total_points": 28,
+      "total_points": 31,
       "teams": {
         "Spain": {
-          "W": 2,
+          "W": 3,
           "L": 0,
           "T": 1,
           "OTW": 0,
           "OTL": 0,
-          "pts": 7
+          "pts": 10
         },
         "Croatia": {
           "W": 2,
@@ -128,7 +128,7 @@
         },
         "Austria": {
           "W": 1,
-          "L": 1,
+          "L": 2,
           "T": 1,
           "OTW": 0,
           "OTL": 0,
