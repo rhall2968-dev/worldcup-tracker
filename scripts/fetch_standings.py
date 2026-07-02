@@ -2,6 +2,7 @@ import json
 import urllib.request
 import urllib.error
 import ssl
+import re
 from datetime import datetime, timezone
 import os
 
@@ -34,14 +35,26 @@ def normalize(name):
 
 
 def is_overtime(match):
-    # Check for penalty shootout indicators
+    # Check 1: Goals scored beyond 90 minutes indicate extra time
+    h_scorers = match.get("home_scorers") or ""
+    a_scorers = match.get("away_scorers") or ""
+    all_scorers = str(h_scorers) + " " + str(a_scorers)
+
+    # Extract goal minutes - patterns like "90+2'", "100'", "125(P)'"
+    # The first capture group gets the base minute
+    minutes = re.findall(r"(\d+)\+?\d*(?:\([^)]*\))?'", all_scorers)
+    if minutes:
+        max_minute = max(int(m) for m in minutes)
+        if max_minute > 90:
+            return True
+
+    # Check 2: Penalty shootout happened (actual penalty scores, not "null" or None)
     home_pen = match.get("home_penalty_score")
     away_pen = match.get("away_penalty_score")
-    if home_pen is not None and away_pen is not None:
+    if home_pen not in (None, "null") and away_pen not in (None, "null"):
         return True
-    # Check for AET (After Extra Time) in time_elapsed
-    elapsed = (match.get("time_elapsed") or "").upper()
-    return "AET" in elapsed or "PEN" in elapsed
+
+    return False
 
 
 def result_for(match, team):

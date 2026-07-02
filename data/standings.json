@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-07-02T19:03:59.613957+00:00",
+  "last_updated": "2026-07-02T19:56:25.595395+00:00",
   "drafters": {
     "Dogg": {
-      "total_points": 40,
+      "total_points": 41,
       "teams": {
         "France": {
-          "W": 3,
+          "W": 4,
           "L": 0,
           "T": 0,
-          "OTW": 1,
+          "OTW": 0,
           "OTL": 0,
-          "pts": 11
+          "pts": 12
         },
         "Morocco": {
           "W": 2,
@@ -21,12 +21,12 @@
           "pts": 9
         },
         "USA": {
-          "W": 2,
+          "W": 3,
           "L": 1,
           "T": 0,
-          "OTW": 1,
+          "OTW": 0,
           "OTL": 0,
-          "pts": 8
+          "pts": 9
         },
         "Colombia": {
           "W": 2,
@@ -38,16 +38,16 @@
         },
         "Ecuador": {
           "W": 1,
-          "L": 1,
+          "L": 2,
           "T": 1,
           "OTW": 0,
-          "OTL": 1,
-          "pts": 5
+          "OTL": 0,
+          "pts": 4
         }
       }
     },
     "Reet": {
-      "total_points": 29,
+      "total_points": 28,
       "teams": {
         "Spain": {
           "W": 2,
@@ -83,11 +83,11 @@
         },
         "Ivory Coast": {
           "W": 2,
-          "L": 1,
+          "L": 2,
           "T": 0,
           "OTW": 0,
-          "OTL": 1,
-          "pts": 7
+          "OTL": 0,
+          "pts": 6
         }
       }
     },
@@ -137,15 +137,15 @@
       }
     },
     "Kid": {
-      "total_points": 37,
+      "total_points": 39,
       "teams": {
         "England": {
-          "W": 2,
+          "W": 3,
           "L": 0,
           "T": 1,
-          "OTW": 1,
+          "OTW": 0,
           "OTL": 0,
-          "pts": 9
+          "pts": 10
         },
         "Brazil": {
           "W": 3,
@@ -156,12 +156,12 @@
           "pts": 10
         },
         "Mexico": {
-          "W": 3,
+          "W": 4,
           "L": 0,
           "T": 0,
-          "OTW": 1,
+          "OTW": 0,
           "OTL": 0,
-          "pts": 11
+          "pts": 12
         },
         "Senegal": {
           "W": 1,
@@ -201,12 +201,12 @@
           "pts": 7
         },
         "Norway": {
-          "W": 2,
+          "W": 3,
           "L": 1,
           "T": 0,
-          "OTW": 1,
+          "OTW": 0,
           "OTL": 0,
-          "pts": 8
+          "pts": 9
         },
         "Switzerland": {
           "W": 2,
@@ -218,11 +218,11 @@
         },
         "Sweden": {
           "W": 1,
-          "L": 1,
+          "L": 2,
           "T": 1,
           "OTW": 0,
-          "OTL": 1,
-          "pts": 5
+          "OTL": 0,
+          "pts": 4
         }
       }
     }
