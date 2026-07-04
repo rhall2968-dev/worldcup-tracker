@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-04T01:25:50.294496+00:00",
+  "last_updated": "2026-07-04T05:31:58.673019+00:00",
   "drafters": {
     "Dogg": {
-      "total_points": 41,
+      "total_points": 44,
       "teams": {
         "France": {
           "W": 4,
@@ -29,12 +29,12 @@
           "pts": 9
         },
         "Colombia": {
-          "W": 2,
+          "W": 3,
           "L": 0,
           "T": 1,
           "OTW": 0,
           "OTL": 0,
-          "pts": 7
+          "pts": 10
         },
         "Ecuador": {
           "W": 1,
