@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-04T18:48:05.646972+00:00",
+  "last_updated": "2026-07-04T20:01:47.143566+00:00",
   "drafters": {
     "Dogg": {
-      "total_points": 44,
+      "total_points": 47,
       "teams": {
         "France": {
           "W": 4,
@@ -13,12 +13,12 @@
           "pts": 12
         },
         "Morocco": {
-          "W": 2,
+          "W": 3,
           "L": 0,
           "T": 1,
           "OTW": 1,
           "OTL": 0,
-          "pts": 9
+          "pts": 12
         },
         "USA": {
           "W": 3,
