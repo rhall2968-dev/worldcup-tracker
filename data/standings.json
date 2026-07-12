@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T05:01:56.672724+00:00",
+  "last_updated": "2026-07-12T07:52:33.835968+00:00",
   "drafters": {
     "Dogg": {
       "total_points": 54,
@@ -92,15 +92,15 @@
       }
     },
     "Joven": {
-      "total_points": 34,
+      "total_points": 36,
       "teams": {
         "Argentina": {
           "W": 4,
           "L": 0,
           "T": 0,
-          "OTW": 1,
+          "OTW": 2,
           "OTL": 0,
-          "pts": 14
+          "pts": 16
         },
         "Netherlands": {
           "W": 2,
@@ -182,7 +182,7 @@
       }
     },
     "Dike": {
-      "total_points": 44,
+      "total_points": 45,
       "teams": {
         "Portugal": {
           "W": 2,
@@ -213,8 +213,8 @@
           "L": 0,
           "T": 1,
           "OTW": 1,
-          "OTL": 0,
-          "pts": 12
+          "OTL": 1,
+          "pts": 13
         },
         "Sweden": {
           "W": 1,
