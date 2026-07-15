@@ -1,228 +1,228 @@
 {
-  "last_updated": "2026-07-15T19:58:40.787258+00:00",
+  "last_updated": "2026-07-15T20:57:09.708792+00:00",
   "drafters": {
     "Dogg": {
-      "total_points": 54,
+      "total_points": 0,
       "teams": {
         "France": {
-          "W": 6,
-          "L": 1,
+          "W": 0,
+          "L": 0,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 18
+          "pts": 0
         },
         "Morocco": {
-          "W": 3,
-          "L": 1,
-          "T": 1,
-          "OTW": 1,
-          "OTL": 0,
-          "pts": 12
-        },
-        "USA": {
-          "W": 3,
-          "L": 2,
+          "W": 0,
+          "L": 0,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 9
+          "pts": 0
         },
-        "Colombia": {
-          "W": 3,
+        "USA": {
+          "W": 0,
           "L": 0,
-          "T": 1,
-          "OTW": 0,
-          "OTL": 1,
-          "pts": 11
-        },
-        "Ecuador": {
-          "W": 1,
-          "L": 2,
-          "T": 1,
+          "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 4
+          "pts": 0
+        },
+        "Colombia": {
+          "W": 0,
+          "L": 0,
+          "T": 0,
+          "OTW": 0,
+          "OTL": 0,
+          "pts": 0
+        },
+        "Ecuador": {
+          "W": 0,
+          "L": 0,
+          "T": 0,
+          "OTW": 0,
+          "OTL": 0,
+          "pts": 0
         }
       }
     },
     "Reet": {
-      "total_points": 43,
+      "total_points": 0,
       "teams": {
         "Spain": {
-          "W": 6,
+          "W": 0,
           "L": 0,
-          "T": 1,
-          "OTW": 0,
-          "OTL": 0,
-          "pts": 19
-        },
-        "Croatia": {
-          "W": 2,
-          "L": 2,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 6
+          "pts": 0
+        },
+        "Croatia": {
+          "W": 0,
+          "L": 0,
+          "T": 0,
+          "OTW": 0,
+          "OTL": 0,
+          "pts": 0
         },
         "Belgium": {
-          "W": 2,
-          "L": 1,
-          "T": 2,
-          "OTW": 1,
+          "W": 0,
+          "L": 0,
+          "T": 0,
+          "OTW": 0,
           "OTL": 0,
-          "pts": 10
+          "pts": 0
         },
         "Uruguay": {
           "W": 0,
-          "L": 1,
-          "T": 2,
-          "OTW": 0,
-          "OTL": 0,
-          "pts": 2
-        },
-        "Ivory Coast": {
-          "W": 2,
-          "L": 2,
+          "L": 0,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 6
+          "pts": 0
+        },
+        "Ivory Coast": {
+          "W": 0,
+          "L": 0,
+          "T": 0,
+          "OTW": 0,
+          "OTL": 0,
+          "pts": 0
         }
       }
     },
     "Joven": {
-      "total_points": 36,
+      "total_points": 0,
       "teams": {
         "Argentina": {
-          "W": 4,
+          "W": 0,
           "L": 0,
           "T": 0,
-          "OTW": 2,
+          "OTW": 0,
           "OTL": 0,
-          "pts": 16
+          "pts": 0
         },
         "Netherlands": {
-          "W": 2,
+          "W": 0,
           "L": 0,
-          "T": 1,
-          "OTW": 0,
-          "OTL": 1,
-          "pts": 8
-        },
-        "Japan": {
-          "W": 1,
-          "L": 1,
-          "T": 2,
-          "OTW": 0,
-          "OTL": 0,
-          "pts": 5
-        },
-        "Turkey": {
-          "W": 1,
-          "L": 2,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 3
+          "pts": 0
         },
-        "Austria": {
-          "W": 1,
-          "L": 2,
-          "T": 1,
+        "Japan": {
+          "W": 0,
+          "L": 0,
+          "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 4
+          "pts": 0
+        },
+        "Turkey": {
+          "W": 0,
+          "L": 0,
+          "T": 0,
+          "OTW": 0,
+          "OTL": 0,
+          "pts": 0
+        },
+        "Austria": {
+          "W": 0,
+          "L": 0,
+          "T": 0,
+          "OTW": 0,
+          "OTL": 0,
+          "pts": 0
         }
       }
     },
     "Kid": {
-      "total_points": 44,
+      "total_points": 0,
       "teams": {
         "England": {
-          "W": 4,
+          "W": 0,
           "L": 0,
-          "T": 1,
-          "OTW": 1,
+          "T": 0,
+          "OTW": 0,
           "OTL": 0,
-          "pts": 15
+          "pts": 0
         },
         "Brazil": {
-          "W": 3,
-          "L": 1,
-          "T": 1,
+          "W": 0,
+          "L": 0,
+          "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 10
+          "pts": 0
         },
         "Mexico": {
-          "W": 4,
-          "L": 1,
+          "W": 0,
+          "L": 0,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 12
+          "pts": 0
         },
         "Senegal": {
-          "W": 1,
-          "L": 2,
-          "T": 0,
-          "OTW": 0,
-          "OTL": 1,
-          "pts": 4
-        },
-        "Korea": {
-          "W": 1,
-          "L": 2,
+          "W": 0,
+          "L": 0,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 3
+          "pts": 0
+        },
+        "Korea": {
+          "W": 0,
+          "L": 0,
+          "T": 0,
+          "OTW": 0,
+          "OTL": 0,
+          "pts": 0
         }
       }
     },
     "Dike": {
-      "total_points": 45,
+      "total_points": 0,
       "teams": {
         "Portugal": {
-          "W": 2,
-          "L": 1,
-          "T": 2,
+          "W": 0,
+          "L": 0,
+          "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 8
+          "pts": 0
         },
         "Germany": {
-          "W": 2,
-          "L": 1,
-          "T": 0,
-          "OTW": 0,
-          "OTL": 1,
-          "pts": 7
-        },
-        "Norway": {
-          "W": 4,
-          "L": 1,
-          "T": 0,
-          "OTW": 0,
-          "OTL": 1,
-          "pts": 13
-        },
-        "Switzerland": {
-          "W": 3,
+          "W": 0,
           "L": 0,
-          "T": 1,
-          "OTW": 1,
-          "OTL": 1,
-          "pts": 13
-        },
-        "Sweden": {
-          "W": 1,
-          "L": 2,
-          "T": 1,
+          "T": 0,
           "OTW": 0,
           "OTL": 0,
-          "pts": 4
+          "pts": 0
+        },
+        "Norway": {
+          "W": 0,
+          "L": 0,
+          "T": 0,
+          "OTW": 0,
+          "OTL": 0,
+          "pts": 0
+        },
+        "Switzerland": {
+          "W": 0,
+          "L": 0,
+          "T": 0,
+          "OTW": 0,
+          "OTL": 0,
+          "pts": 0
+        },
+        "Sweden": {
+          "W": 0,
+          "L": 0,
+          "T": 0,
+          "OTW": 0,
+          "OTL": 0,
+          "pts": 0
         }
       }
     }
