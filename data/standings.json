@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-18T22:34:44.609858+00:00",
+  "last_updated": "2026-07-18T23:39:05.910176+00:00",
   "drafters": {
     "Dogg": {
       "total_points": 54,
       "teams": {
         "France": {
           "W": 6,
-          "L": 1,
+          "L": 2,
           "T": 0,
           "OTW": 0,
           "OTL": 0,
@@ -137,15 +137,15 @@
       }
     },
     "Kid": {
-      "total_points": 44,
+      "total_points": 47,
       "teams": {
         "England": {
-          "W": 4,
+          "W": 5,
           "L": 1,
           "T": 1,
           "OTW": 1,
           "OTL": 0,
-          "pts": 15
+          "pts": 18
         },
         "Brazil": {
           "W": 3,
